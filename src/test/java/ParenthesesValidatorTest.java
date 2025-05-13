@@ -31,4 +31,9 @@ public class ParenthesesValidatorTest {
     public void testSingleClosingParenthesisIsInvalid () {
         assertFalse(ParenthesesValidator.isValid(")"));
     }
+
+    @Test
+    public void testSinglePairIsValid() {
+        assertTrue(ParenthesesValidator.isValid("()"));
+    }
 }
